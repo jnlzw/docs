@@ -22,8 +22,6 @@
                             "pages": [
                                 "api-reference/endpoint/get",
                                 "api-reference/endpoint/create",
-                                "api-reference/endpoint/delete",
-                                "api-reference/endpoint/webhook",
                                 "api-reference/endpoint/update"
                             ]
                         }
@@ -37,6 +35,22 @@
                         "api-reference/endpoint/delete",
                         "api-reference/endpoint/webhook",
                         "api-reference/endpoint/update"
+                    ]
+                },
+                {
+                    "group": "F10",
+                    "pages": [
+                        "api-reference/endpoint/get",
+                        "api-reference/endpoint/webhook",
+                        "api-reference/endpoint/update"
+                    ]
+                },
+                {
+                    "group": "交易",
+                    "pages": [
+                        "api-reference/endpoint/get",
+                        "api-reference/endpoint/create",
+                        "api-reference/endpoint/webhook"
                     ]
                 }
             ]
