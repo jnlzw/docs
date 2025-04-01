@@ -127,9 +127,7 @@
             }
           }
         }
-      }
-    },
-    "/plants/{id}": {
+      },
       "put": {
         "description": "Update a single plant based on the ID supplied",
         "parameters": [
