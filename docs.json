@@ -59,9 +59,9 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Website",
+          "anchor": "Ainvest Website",
           "href": "https://ainvest.com",
-          "icon": "/logo/light.svg"
+          "icon": "chart-candlestick"
         }
       ]
     }
