@@ -142,6 +142,17 @@
             }
           }
         ],
+        "requestBody": {
+          "description": "Plant to add to the store",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewPlant"
+              }
+            }
+          },
+          "required": true
+        },
         "responses": {
           "204": {
             "description": "Plant updated",
