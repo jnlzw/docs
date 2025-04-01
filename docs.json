@@ -11,6 +11,29 @@
   "navigation": {
     "languages":[
       {
+        "language": "zh",
+        "tabs": [
+          {
+            "tab": "指南",
+            "groups": [
+              {
+                "group": "入门",
+                "pages":[
+                  {
+                    "group": "入门",
+                    "pages": [
+                      "introduction",
+                      "quickstart",
+                      "development"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
         "language": "en",
         "tabs": [
           {
