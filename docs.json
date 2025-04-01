@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "Willow",
+  "theme": "willow",
   "name": "Ainvest Open Platform",
   "colors": {
     "primary": "#3064EF",
@@ -14,21 +14,44 @@
         "language": "zh",
         "tabs": [
           {
-            "tab": "指南",
+            "tab": "API 文档",
             "groups": [
               {
-                "group": "入门",
+                "group": "资讯",
                 "pages":[
                   {
-                    "group": "入门",
+                    "group": "快讯",
                     "pages": [
-                      "introduction",
-                      "quickstart",
-                      "development"
+                      "api-reference/endpoint/get",
+                      "api-reference/endpoint/create",
+                      "api-reference/endpoint/delete",
+                      "api-reference/endpoint/webhook",
+                      "api-reference/endpoint/update"
+                    ]
+                  },
+                  {
+                    "group": "要闻",
+                    "pages": [
+                      "api-reference/endpoint/get",
+                      "api-reference/endpoint/create",
+                      "api-reference/endpoint/delete",
+                      "api-reference/endpoint/webhook",
+                      "api-reference/endpoint/update"
                     ]
                   }
                 ]
+              },
+              {
+                "group": "行情",
+                "pages": [
+                  "api-reference/endpoint/get",
+                  "api-reference/endpoint/create",
+                  "api-reference/endpoint/delete",
+                  "api-reference/endpoint/webhook",
+                  "api-reference/endpoint/update"
+                ]
               }
+            
             ]
           }
         ]
