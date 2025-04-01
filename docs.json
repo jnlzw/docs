@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Ainvest Open Platform",
   "colors": {
     "primary": "#3064EF",
     "light": "#07C983",
