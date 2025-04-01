@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "willow",
+  "theme": "mint",
   "name": "Ainvest Open Platform",
   "colors": {
     "primary": "#3064EF",
