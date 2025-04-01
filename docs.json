@@ -41,7 +41,6 @@
               },
               {
                 "group": "行情",
-                "hidden": true,
                 "pages": [
                   "api-reference/endpoint/get",
                   "api-reference/endpoint/create",
@@ -52,7 +51,6 @@
               },
               {
                 "group": "F10",
-                "hidden": true,
                 "pages": [
                   "api-reference/endpoint/get",
                   "api-reference/endpoint/webhook",
@@ -61,7 +59,6 @@
               },
               {
                 "group": "交易",
-                "hidden": true,
                 "pages": [
                   "api-reference/endpoint/get",
                   "api-reference/endpoint/create",
