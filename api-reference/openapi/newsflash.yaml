@@ -1,17 +1,30 @@
 openapi: 3.0.0
 info:
-  title: News API
-  description: API for retrieving news feeds and details. Includes notes about usage limits for free users.
+  title: 获取新闻动态分页_copy
+  description: '### 备注: 当前免费用户调用5次接口后就会报错,显示免费额度用尽'
   version: 1.0.0
 servers:
+  - url: https://open.ainvest.com/open
+    description: Production environment server
   - url: https://ainvest-api.touzime.com/open
     description: Test environment server
+tags:
+  - name: test
+    description: Endpoints related to testing
+  - name: 接口测试-支持自动化
+    description: ''
+  - name: 接口测试-支持巡检
+    description: ''
 paths:
   /news/page:
     get:
-      summary: 获取新闻动态分页
+      tags:
+        - test
+        - 接口测试-支持自动化
+        - 接口测试-支持巡检
+      summary: 获取新闻动态分页_copy
       description: '### 备注: 当前免费用户调用5次接口后就会报错,显示免费额度用尽'
-      operationId: getNewsPageByQuery
+      operationId: getNewsPageCopy
       parameters:
         - name: tab
           in: query
@@ -48,55 +61,16 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/NewsPageResponse'
+                $ref: '#/components/schemas/NewsPageResponseCopy'
         '401':
           description: 没有权限
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/Error'
-        '402':
-          description: 测试 1
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error'
-  /news/info/{newsId}:
-    get:
-      summary: 获取新闻动态详情
-      description: '### 备注: 当前免费用户调用5次接口后就会报错,显示免费额度用尽'
-      operationId: getNewsInfo
-      parameters:
-        - name: newsId
-          in: path
-          required: true
-          description: the news id
-          schema:
-            type: string
-        - name: Cookie
-          in: header
-          required: true
-          description: cookie数值
-          schema:
-            type: string
-          example: userid=123456;sessionid=xxx
-      responses:
-        '200':
-          description: 成功
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/NewsInfoResponse'
-        '401':
-          description: 没有权限
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error'
-
 components:
   schemas:
-    NewsPageResponse:
+    NewsPageResponseCopy:
       type: object
       properties:
         data:
@@ -111,7 +85,7 @@ components:
               description: 页数
             data:
               type: array
-              description: 数据列表
+              description: 数据
               items:
                 type: object
                 required:
@@ -154,19 +128,18 @@ components:
                   publish_time:
                     type: number
                     description: 内容发布时间
-                    format: int64
                   title:
                     type: string
                     description: 内容标题
                   summary:
                     type: string
-                    description: 内容摘要
+                    description: 内容标题
                   content:
                     type: string
                     description: 内容正文
                   source:
                     type: string
-                    description: 内容来源/作者
+                    description: 内容作者
                   seo_key:
                     type: string
                     description: 内容seoKey
@@ -212,142 +185,6 @@ components:
                   read_time:
                     type: string
                     description: 内容阅读时长
-        status_code:
-          type: number
-          description: 状态码
-        status_msg:
-          type: string
-          description: 状态信息
-    NewsInfoResponse:
-      type: object
-      properties:
-        data:
-          type: object
-          properties:
-            content_info:
-              type: object
-              description: 内容数据
-              properties:
-                id:
-                  type: string
-                  description: 内容平台唯一id
-                biz_id:
-                  type: string
-                  description: 业务id
-                material_id:
-                  type: string
-                  description: 物料id
-                valid:
-                  type: number
-                  description: 上下线标识：0-下线，1-上线
-                title:
-                  type: string
-                  description: 标题
-                content:
-                  type: string
-                  description: 正文
-                business_code:
-                  type: string
-                  description: 业务代码
-                type:
-                  type: number
-                  description: 内容中台业务类型
-                media:
-                  type: object
-                  description: 来源
-                  properties:
-                    id:
-                      type: string
-                      description: id
-                    name:
-                      type: string
-                      description: 名称
-                ctime:
-                  type: number
-                  description: 创建时间
-                  format: int64
-                rtime:
-                  type: number
-                  description: 修改时间
-                  format: int64
-                summary:
-                  type: string
-                  description: 摘要
-                author:
-                  type: object
-                  description: 作者
-                  properties:
-                    id:
-                      type: string
-                    name:
-                      type: string
-                      description: 名称
-                    authorship:
-                      type: string
-                      description: 作者身份
-                language:
-                  type: string
-                  description: 语言
-                cover_image:
-                  type: string
-                  description: 封面图
-                important:
-                  type: string
-                  description: 重要性
-                video:
-                  type: boolean
-                  description: 视频
-                audio:
-                  type: string
-                  description: 音频
-                charge:
-                  type: number
-                  description: 是否收费
-                price:
-                  type: string
-                  description: 价格
-                picture_urls:
-                  type: array
-                  description: 图片
-                  items:
-                    type: string
-                stock_infos:
-                  type: array
-                  description: 关联股票
-                  items:
-                    type: string
-                scenes:
-                  type: string
-                  description: 场景
-            author_info:
-              type: object
-              description: 作者信息
-              properties:
-                account_id:
-                  type: string
-                  description: 社区账户ID
-                nickname:
-                  type: string
-                  description: 账户昵称
-                account_introduction:
-                  type: string
-                  description: 简介
-                portrait:
-                  type: string
-                  description: 头像
-            page_info:
-              type: object
-              description: 页面额外信息
-              properties:
-                jump_type:
-                  type: number
-                  description: 1-展示内容底层页，2-跳转到源网
-                source_url:
-                  type: string
-                  description: 源网地址
-                read_time:
-                  type: number
-                  description: 阅读时间
         status_code:
           type: number
           description: 状态码
