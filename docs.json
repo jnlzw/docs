@@ -14,6 +14,12 @@
         "language": "zh",
         "tabs": [
           {
+            "tab": "快速开始",
+            "pages":[
+              "/introduction"
+            ]
+          },
+          {
             "tab": "资讯 Api",
             "groups": [
               {
@@ -21,6 +27,13 @@
                 "pages": [
                   "/api-reference/news/newsflash/list",
                   "/api-reference/news/newsflash/detail"
+                ]
+              },
+              {
+                "group": "头条",
+                "pages": [
+                  "/api-reference/news/headline/list",
+                  "/api-reference/news/headline/detail"
                 ]
               }
             ]
