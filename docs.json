@@ -24,11 +24,10 @@
             "pages": [
               {
                 "group": "资讯",
-                "icon":"chart-candlestick",
                 "pages": [
                   {
                     "group": "快讯",
-                    "icon":"chart-candlestick",
+                    "icon":"newspaper",
                     "pages": [
                       "/api-reference/news/newsflash/list",
                       "/api-reference/news/newsflash/detail"
@@ -36,6 +35,7 @@
                   },
                   {
                     "group": "头条",
+                    "icon":"list-start",
                     "pages": [
                       "/api-reference/news/headline/list",
                       "/api-reference/news/headline/detail"
