@@ -61,15 +61,6 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Error'
-        '1001':
-          description: 新闻页未找到
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error'
-
-
-
   /news/info/{newsId}:
     get:
       summary: 获取新闻动态详情
