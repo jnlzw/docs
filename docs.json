@@ -23,19 +23,17 @@
             "tab": "接口文档",
             "pages": [
               {
-                "group": "资讯",
+                "group": "1. 资讯",
                 "pages": [
                   {
-                    "group": "快讯",
-                    "icon":"newspaper",
+                    "group": "1.1 快讯",
                     "pages": [
                       "/api-reference/news/newsflash/list",
                       "/api-reference/news/newsflash/detail"
                     ]
                   },
                   {
-                    "group": "头条",
-                    "icon":"panel-top-close",
+                    "group": "1.2 头条",
                     "pages": [
                       "/api-reference/news/headline/list",
                       "/api-reference/news/headline/detail"
@@ -44,24 +42,24 @@
                 ]
               },
               {
-                "group": "F10",
+                "group": "2. F10",
                 "pages": [
                   {
-                    "group": "财报",
+                    "group": "2.1 财报",
                     "pages": [
                       "/api-reference/f10/financialreport/list",
                       "/api-reference/f10/financialreport/detail"
                     ]
                   },
                   {
-                    "group": "公司",
+                    "group": "2.2 公司",
                     "pages": [
                       "/api-reference/f10/company/list",
                       "/api-reference/f10/company/detail"
                     ]
                   },
                   {
-                    "group": "分析",
+                    "group": "2.3 分析",
                     "pages": [
                       "/api-reference/f10/analysis/list",
                       "/api-reference/f10/analysis/detail"
