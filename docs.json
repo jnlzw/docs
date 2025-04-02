@@ -11,23 +11,6 @@
   "navigation": {
     "languages": [
       {
-        "language": "zh",
-        "tabs": [
-          {
-            "tab": "资讯 API",
-            "groups": [
-              {
-                "group": "快讯",
-                "pages": [
-                  "api-reference/news/list",
-                  "api-reference/news/detail"
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
         "language": "en",
         "tabs": [
           {
