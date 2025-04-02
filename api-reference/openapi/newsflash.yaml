@@ -10,23 +10,12 @@ servers:
     description: Test environment server
 security:
   - bearerAuth: []
-tags:
-  - name: test
-    description: Endpoints related to testing
-  - name: 接口测试-支持自动化
-    description: ''
-  - name: 接口测试-支持巡检
-    description: ''
 paths:
   /news/page:
     get:
-      tags:
-        - test
-        - 接口测试-支持自动化
-        - 接口测试-支持巡检
-      summary: 获取新闻动态分页_copy
-      description: '### 备注: 当前免费用户调用5次接口后就会报错,显示免费额度用尽'
-      operationId: getNewsPageCopy
+      summary: 获取新闻动态分页
+      description: '当前免费用户调用5次接口后就会报错,显示免费额度用尽'
+      operationId: getNewsPage
       parameters:
         - name: tab
           in: query
