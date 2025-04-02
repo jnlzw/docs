@@ -24,10 +24,11 @@
             "groups": [
               {
                 "group": "资讯",
-                "icon":"newspaper",
+                "icon":"fa-solid fa-newspaper",
                 "pages": [
                   {
                     "group": "快讯",
+                    "icon":"chart-candlestick",
                     "pages": [
                       "/api-reference/news/newsflash/list",
                       "/api-reference/news/newsflash/detail"
