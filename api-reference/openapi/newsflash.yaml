@@ -55,8 +55,8 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Error'
-        '101':
-          description: 新闻页未找到
+        '402':
+          description: 测试 1
           content:
             application/json:
               schema:
