@@ -14,55 +14,13 @@
         "language": "zh",
         "tabs": [
           {
-            "tab": "API 文档",
+            "tab": "资讯 API",
             "groups": [
               {
-                "group": "资讯",
+                "group": "快讯",
                 "pages": [
-                  {
-                    "group": "快讯",
-                    "pages": [
-                      "api-reference/endpoint/get",
-                      "api-reference/endpoint/create",
-                      "api-reference/endpoint/delete",
-                      "api-reference/endpoint/webhook",
-                      "api-reference/endpoint/update"
-                    ]
-                  },
-                  {
-                    "group": "要闻",
-                    "pages": [
-                      "api-reference/endpoint/get",
-                      "api-reference/endpoint/create",
-                      "api-reference/endpoint/update"
-                    ]
-                  }
-                ]
-              },
-              {
-                "group": "行情",
-                "pages": [
-                  "api-reference/endpoint/get",
-                  "api-reference/endpoint/create",
-                  "api-reference/endpoint/delete",
-                  "api-reference/endpoint/webhook",
-                  "api-reference/endpoint/update"
-                ]
-              },
-              {
-                "group": "F10",
-                "pages": [
-                  "api-reference/endpoint/get",
-                  "api-reference/endpoint/webhook",
-                  "api-reference/endpoint/update"
-                ]
-              },
-              {
-                "group": "交易",
-                "pages": [
-                  "api-reference/endpoint/get",
-                  "api-reference/endpoint/create",
-                  "api-reference/endpoint/webhook"
+                  "api-reference/news/list",
+                  "api-reference/news/detail"
                 ]
               }
             ]
