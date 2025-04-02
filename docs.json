@@ -24,6 +24,7 @@
             "groups": [
               {
                 "group": "资讯",
+                "icon":"newspaper",
                 "pages": [
                   {
                     "group": "快讯",
@@ -43,6 +44,7 @@
               },
               {
                 "group": "F10",
+                "icon":"building-2",
                 "pages": [
                   {
                     "group": "财报",

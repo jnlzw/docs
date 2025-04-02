@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
-  title: 获取新闻动态分页_copy
-  description: '### 备注: 当前免费用户调用5次接口后就会报错,显示免费额度用尽'
+  title: 快讯 openapi
+  description: '快讯接口'
   version: 1.0.0
 servers:
   - url: https://open.ainvest.com/open
@@ -14,7 +14,7 @@ paths:
   /news/page:
     get:
       summary: 获取新闻动态分页
-      description: '当前免费用户调用5次接口后就会报错,显示免费额度用尽'
+      description: '可以通过该接口，以分页方式获取最近快讯列表。'
       operationId: getNewsPage
       parameters:
         - name: tab
