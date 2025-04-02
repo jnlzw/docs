@@ -24,6 +24,7 @@
             "groups": [
               {
                 "group": "资讯",
+                "icon":"chart-candlestick",
                 "pages": [
                   {
                     "group": "快讯",
