@@ -15,31 +15,59 @@
         "tabs": [
           {
             "tab": "快速开始",
-            "pages":[
+            "pages": [
               "/introduction"
             ]
           },
           {
-            "tab": "资讯 Api",
+            "tab": "接口文档",
             "groups": [
               {
-                "group": "快讯",
+                "group": "资讯",
                 "pages": [
-                  "/api-reference/news/newsflash/list",
-                  "/api-reference/news/newsflash/detail"
+                  {
+                    "group": "快讯",
+                    "pages": [
+                      "/api-reference/news/newsflash/list",
+                      "/api-reference/news/newsflash/detail"
+                    ]
+                  },
+                  {
+                    "group": "头条",
+                    "pages": [
+                      "/api-reference/news/headline/list",
+                      "/api-reference/news/headline/detail"
+                    ]
+                  }
                 ]
               },
               {
-                "group": "头条",
+                "group": "F10",
                 "pages": [
-                  "/api-reference/news/headline/list",
-                  "/api-reference/news/headline/detail"
+                  {
+                    "group": "财报",
+                    "pages": [
+                      "/api-reference/f10/financialreport/list",
+                      "/api-reference/f10/financialreport/detail"
+                    ]
+                  },
+                  {
+                    "group": "公司",
+                    "pages": [
+                      "/api-reference/f10/company/list",
+                      "/api-reference/f10/company/detail"
+                    ]
+                  },
+                  {
+                    "group": "分析",
+                    "pages": [
+                      "/api-reference/f10/analysis/list",
+                      "/api-reference/f10/analysis/detail"
+                    ]
+                  }
                 ]
               }
             ]
-          },
-          {
-            "tab": "F10 Api"
           }
         ]
       },
