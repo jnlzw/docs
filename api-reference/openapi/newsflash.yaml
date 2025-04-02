@@ -8,6 +8,8 @@ servers:
     description: Production environment server
   - url: https://ainvest-api.touzime.com/open
     description: Test environment server
+security:
+  - bearerAuth: []
 tags:
   - name: test
     description: Endpoints related to testing
@@ -203,3 +205,7 @@ components:
         status_msg:
           type: string
           description: 错误信息
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
